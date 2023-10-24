@@ -44,6 +44,9 @@ rectangle Cheezato_Pizza{
     PayOnline .> (Pay) : extends
     PayCash .> (Pay) : extends
 
+
    
 }
 @enduml
+
+![3A9303B9-CA38-42FF-A714-FA2BEBE990DE](https://github.com/Abhijitklkrni/lld/assets/69401232/3bb1e278-ac22-495c-a2c4-26bc827204c0)
