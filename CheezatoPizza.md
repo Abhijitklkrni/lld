@@ -12,3 +12,4 @@ Requirements
 10. Apply Coupons
     
     
+Payment gateway - third party integration 
