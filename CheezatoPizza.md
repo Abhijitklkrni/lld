@@ -13,3 +13,37 @@ Requirements
     
     
 11. Payment gateway - third party integration 
+
+
+
+Use Case diagram
+
+@startuml
+left to right direction
+
+actor Admin
+actor Customer
+
+
+rectangle Cheezato_Pizza{
+
+    usecase "Pay Online" as PayOnline
+    usecase "Pay Cash" as PayCash
+    usecase "Login" as Login    
+
+    Admin --> (Add a product)
+    Admin --> (Delete a product)
+    Admin --> (Update order details)
+    Admin --> Login
+   
+    Customer --> (Pay)
+    Customer --> (Check Location Servicability)
+    Customer --> (Request Order delivery)
+    Customer --> Login
+
+    PayOnline .> (Pay) : extends
+    PayCash .> (Pay) : extends
+
+   
+}
+@enduml
