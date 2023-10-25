@@ -16,7 +16,7 @@ Requirements
 
 
 
-Use Case diagram
+Use Case diagram 
 
 @startuml
 left to right direction
@@ -54,7 +54,8 @@ rectangle Cheezato_Pizza{
 
 
 
-CLASS DIAGRAM UML CODE
+CLASS DIAGRAM UML CODE - https://www.plantuml.com/plantuml/duml/XP51QlCm48NtFiKZc__F8Zr05oN6KEYgWT833D8a4P4benb1G-dT6qis3MbmDyOZVVFUcz5Mb9BctZUUzmgDIEvmL5YNsAYBeI6ZCM57wUJ2eLNbO2deTDnbqTXpcihMzYuqpTXAuU0PpoJQ1jkHx_7P0AW8Dfid_6-j1M6eol1Hryl4tiUO_c1ak2FpFbXIXYXf5iJz3Ltmyid2XeInsj4Phy6xm2kGu5BMwZVLaHndPlolQlDUgl_bQdtdk3koEPKC_sGALyFy-E5XQiSZ-6FSlLIWcjsxhWgtxtNjoFsWPuYFAki5-4KaCmZgp8brYUoYzsmK0vrx3ejeIH3plFLRap9Gwtqqf0mg8SVXN30-Mwx3pne5BiMk6h_L7LxpNytsOfzx_mq0
+
 @startuml
 class Restaurant{
 - int restaurantId;
