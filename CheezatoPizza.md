@@ -50,3 +50,97 @@ rectangle Cheezato_Pizza{
 @enduml
 
 ![3A9303B9-CA38-42FF-A714-FA2BEBE990DE](https://github.com/Abhijitklkrni/lld/assets/69401232/3bb1e278-ac22-495c-a2c4-26bc827204c0)
+
+
+
+
+CLASS DIAGRAM UML CODE
+@startuml
+class Restaurant{
+- int restaurantId;
+- String name;
+- double rating;
+- String description;
+- ActiveStatus status;
+
+- List<Cuisine> cuisines;
+- List<Contact> contacts;
+- Address address;
+- Menu menu;
+- List<Review> reviews;
+}
+
+enum ActiveStatus{
+CURRENTLY_SERVING,
+CLOSED_FOR_DELIVERY, 
+PERMANENTELY_CLOSED;
+}
+
+Restaurant *-- ActiveStatus
+
+enum Cuisine{
+Pizza,
+Pasta,
+Fast Food,
+Shake,
+Beverages
+}
+
+Restaurant *-- Cuisine
+
+class Contact{
+- String name;
+- String phoneNumber;
+}
+
+Restaurant o-- Contact
+
+class Address{
+- String addressDesc;
+- String city;
+- String state;
+}
+
+Restaurant o-- Address
+
+class Menu{
+List<FoodItems> foodItems;
+
+}
+
+Restaurant o-- Menu
+
+
+class FoodItems{
+String restaurantId;
+String itemId;
+List<ItemTags> itemTags;
+
+}
+
+
+
+class Item{
+long itemId;
+String itemname;
+String itemDesc;
+double price;
+double rating;
+
+}
+
+Enum ItemTags{
+Chefs Special,
+Spicy,
+very spicy,
+Veg,
+Non veg
+}
+
+class Review{
+String comment;
+long upVote;
+long downVote;
+}
+
+@enduml
